@@ -1,0 +1,176 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+			margin-right: 150px;
+            width: 350px;
+            max-width: 100%;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+        .form-group input:focus, 
+        .form-group select:focus {
+            outline: none;
+            border-color: #007bff; /* Blue focus border */
+        }
+        .form-group select {
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Gradient background */
+            background-position: right 12px center;
+            background-repeat: no-repeat;
+            padding: 12px 30px 12px 12px; /* Adjust padding */
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+        .form-group select:hover,
+        .form-group select:focus {
+            border-color: #007bff; /* Blue border on hover/focus */
+            background-color: #e9ecef; /* Lighter background on hover/focus */
+        }
+        .form-group select::-ms-expand {
+            display: none; /* Hide default arrow in IE */
+        }
+        .form-group button {
+            background-color: #007bff; /* Blue button */
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 45mm); /* 4 columns */
+            grid-template-rows: repeat(18, 15mm); /* 18 rows */
+            column-gap: 1px; /* Set column gap*/
+            row-gap: 1px; /* Set row gap*/
+            padding: 20px;
+            margin-top: 0px;
+            background-color: #ffffff;            
+        }
+        .outer-box {
+            width: 45mm;
+            height: 15mm;
+            border: 0px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .inner-box {
+            width: 40mm;
+            height: 4.7mm;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px; /* Adjust as needed */
+            font-family: Arial, sans-serif;
+        }
+        .text1 {
+            margin: 2px 0; /* Adjust as needed */
+            font-size: 10px; /* Adjust as needed */
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        .text2 {
+            margin: 2px 0; /* Adjust as needed */
+            font-size: 10px; /* Adjust as needed */
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        .icon {
+            margin-right: 5px; /* Adjust as needed */
+        }
+        .line {
+            content: '';
+            position: absolute;
+            background-color: black; /* You can change the line color */
+        }
+        .line.vertical-top-left {
+            top: -3mm;
+            left: -0.3mm;
+            width: 0.75pt;
+            height: 3mm;
+        }
+        .line.vertical-top-right {
+            top: -3mm;
+            right: -0.3mm;
+            width: 0.75pt;
+            height: 3mm;
+        }
+        .line.vertical-bottom-left {
+            bottom: -3mm;
+            left: -0.3mm;
+            width: 0.75pt;
+            height: 3mm;
+        }
+        .line.vertical-bottom-right {
+            bottom: -3mm;
+            right: -0.3mm;
+            width: 0.75pt;
+            height: 3mm;
+        }
+        .line.horizontal-top-left {
+            left: -3mm;
+            top: -0.3mm;
+            width: 3mm;
+            height: 0.75pt;
+        }
+        .line.horizontal-top-right {
+            right: -3mm;
+            top: -0.3mm;
+            width: 3mm;
+            height: 0.75pt;
+        }
+        .line.horizontal-bottom-left {
+            left: -3mm;
+            bottom: -0.3mm;
+            width: 3mm;
+            height: 0.75pt;
+        }
+        .line.horizontal-bottom-right {
+            right: -3mm;
+            bottom: -0.3mm;
+            width: 3mm;
+            height: 0.75pt;
+        }
